@@ -2,22 +2,30 @@ public class FirstClass {
     public static void main(String[] args) {
         String hello ="Welcome in the Cyberstore traveler";
         System.out.println(hello);
-        Notebook notebook = new Notebook(600, 1000, 2020);
-        Notebook heavyNetbook = new Notebook(2000, 1500, 2010);
-        Notebook oldNetebook = new Notebook(1600, 500 , 2000);
-        System.out.println(notebook.weight+"g" +" "+ notebook.price+"zl" +" "+notebook.year+"r.");
-        notebook.checkprice();
-        notebook.checkWeight();
-        notebook.checkBestComp();
-        System.out.println(heavyNetbook.weight +"g" +" "+ heavyNetbook.price+"zl"+" "+heavyNetbook.year+"r.");
-        heavyNetbook.checkprice();
-        heavyNetbook.checkWeight();
-        heavyNetbook.checkBestComp();
-        System.out.println(oldNetebook.weight+"g" + " " + oldNetebook.price+"zl" +" "+oldNetebook.year+"r.");
-        oldNetebook.checkprice();
-        oldNetebook.checkWeight();
-        oldNetebook.checkBestComp();
 
+        Notebook noteBook = new Notebook(600, 1000, 2020);
+        Notebook heavyNotebook = new Notebook(2000, 1500, 2010);
+        Notebook oldNotebook = new Notebook(1600, 500 , 2000);
 
+            noteBook.breakLine();// metoda \n
+        System.out.println(noteBook.weight+"g" +" "+ noteBook.price+"zl" +" "+noteBook.year+"r.");
+        noteBook.checkprice();
+        noteBook.checkWeight();
+        noteBook.checkyear();
+        noteBook.checkBestComp();
+
+            noteBook.breakLine();
+        System.out.println(heavyNotebook.weight +"g" +" "+ heavyNotebook.price+"zl"+" "+heavyNotebook.year+"r.");
+        heavyNotebook.checkprice();
+        heavyNotebook.checkWeight();
+        heavyNotebook.checkyear();
+        heavyNotebook.checkBestComp();
+
+            noteBook.breakLine();
+        System.out.println(oldNotebook.weight+"g" + " " + oldNotebook.price+"zl" +" "+oldNotebook.year+"r.");
+        oldNotebook.checkprice();
+        oldNotebook.checkWeight();
+        oldNotebook.checkyear();
+        oldNotebook.checkBestComp();
     }
 }
