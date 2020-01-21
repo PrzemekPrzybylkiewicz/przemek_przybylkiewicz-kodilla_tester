@@ -2,8 +2,9 @@ public class Notebook {
     int weight;
     int price;
     int year;
+    String weigh;
 
-    public Notebook(int weight, int price, int year) {
+    public Notebook(int weight, int price, int year, String weigh) {
         this.weight = weight;
         this.price = price;
         this.year = year;
@@ -18,6 +19,11 @@ public class Notebook {
             System.out.println("This notebook is expensive");
         }
     }
+    public String getWeight() {
+        return this.weigh;
+
+    }
+
     public void checkWeight(){
         if (this.weight <= 600){
             System.out.println("this computer is lightweight");
