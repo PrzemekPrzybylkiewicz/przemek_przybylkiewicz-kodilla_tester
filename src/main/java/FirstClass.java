@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class FirstClass {
     public static void main(String[] args) {
 
-
+        System.out.println("Podaj rok ");
         Scanner sc =new Scanner(System.in);
         int rok = sc.nextInt();
 
@@ -11,13 +11,13 @@ public class FirstClass {
         System.out.println(leapYear.checkLeapYear());
 
 
-       /*
+        /*
         String hello ="Welcome in the Cyberstore traveler";
         System.out.println(hello);
 
-        Notebook noteBook = new Notebook(600, 1000, 2020, "500");
-        Notebook heavyNotebook = new Notebook(2000, 1500, 2010,"");
-        Notebook oldNotebook = new Notebook(1600, 500 , 2000,"");
+        Notebook noteBook = new Notebook(600, 1000, 2020 );
+        Notebook heavyNotebook = new Notebook(2000, 1500, 2010);
+        Notebook oldNotebook = new Notebook(1600, 500 , 2000);
 
 
             noteBook.breakLine();// metoda \n
@@ -40,6 +40,8 @@ public class FirstClass {
         oldNotebook.checkprice();
         oldNotebook.checkWeight();
         oldNotebook.checkyear();
-        oldNotebook.checkBestComp();*/
+        oldNotebook.checkBestComp();
+
+         */
     }
 }

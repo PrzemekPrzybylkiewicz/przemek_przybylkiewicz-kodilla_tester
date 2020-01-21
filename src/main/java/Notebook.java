@@ -2,9 +2,9 @@ public class Notebook {
     int weight;
     int price;
     int year;
-    String weigh;
 
-    public Notebook(int weight, int price, int year, String weigh) {
+
+    public Notebook(int weight, int price, int year) {
         this.weight = weight;
         this.price = price;
         this.year = year;
@@ -18,10 +18,6 @@ public class Notebook {
         }else{
             System.out.println("This notebook is expensive");
         }
-    }
-    public String getWeight() {
-        return this.weigh;
-
     }
 
     public void checkWeight(){
