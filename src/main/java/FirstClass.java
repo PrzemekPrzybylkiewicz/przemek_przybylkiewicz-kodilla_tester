@@ -1,31 +1,18 @@
+import java.util.Random;
+
 public class FirstClass {
     public static void main(String[] args) {
-        String hello ="Welcome in the Cyberstore traveler";
-        System.out.println(hello);
+        Loop loop= new Loop();
+        int[] numbers = new int[]{1,2,3,4,5,6,7};
+        //int sum=loop.sumNum(numbers);
+        //System.out.println(sum);
 
-        Notebook noteBook = new Notebook(600, 1000, 2020);
-        Notebook heavyNotebook = new Notebook(2000, 1500, 2010);
-        Notebook oldNotebook = new Notebook(1600, 500 , 2000);
+        String[] movies = new String[]{"a","b","c"};
+        User countTo = new User();
+        int sum = countTo.randomNumber();
+        System.out.println(sum);
 
-            noteBook.breakLine();// metoda \n
-        System.out.println(noteBook.weight+"g" +" "+ noteBook.price+"zl" +" "+noteBook.year+"r.");
-        noteBook.checkprice();
-        noteBook.checkWeight();
-        noteBook.checkyear();
-        noteBook.checkBestComp();
 
-            noteBook.breakLine();
-        System.out.println(heavyNotebook.weight +"g" +" "+ heavyNotebook.price+"zl"+" "+heavyNotebook.year+"r.");
-        heavyNotebook.checkprice();
-        heavyNotebook.checkWeight();
-        heavyNotebook.checkyear();
-        heavyNotebook.checkBestComp();
 
-            noteBook.breakLine();
-        System.out.println(oldNotebook.weight+"g" + " " + oldNotebook.price+"zl" +" "+oldNotebook.year+"r.");
-        oldNotebook.checkprice();
-        oldNotebook.checkWeight();
-        oldNotebook.checkyear();
-        oldNotebook.checkBestComp();
     }
 }
