@@ -30,6 +30,7 @@ public class Application {
         }else {
             System.out.println("wartość potegowania się nie zgadza");
         }
+        // test
 
 
 
