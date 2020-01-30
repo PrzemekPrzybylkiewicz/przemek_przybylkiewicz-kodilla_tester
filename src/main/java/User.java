@@ -5,6 +5,7 @@ public class User { // tu znajdują sie dwa zadania z loop
 
     public int randomNumber() {
         Random random = new Random();
+
         int result = 0;
         int max = 0;
         int min = 31;
@@ -31,5 +32,7 @@ public class User { // tu znajdują sie dwa zadania z loop
             }
         }
         return result;
+
+
     }
 }
