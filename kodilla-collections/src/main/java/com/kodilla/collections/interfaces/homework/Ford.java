@@ -1,5 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
+import com.kodilla.collections.arrays.homework.CarUtils;
+
 public class Ford implements Car {
     private int speed;
 
@@ -25,5 +27,10 @@ public class Ford implements Car {
     }
     }
 
-
+    @Override
+    public String toString() {
+        return "Ford{" +
+                "speed=" + speed +
+                '}';
+    }
 }
