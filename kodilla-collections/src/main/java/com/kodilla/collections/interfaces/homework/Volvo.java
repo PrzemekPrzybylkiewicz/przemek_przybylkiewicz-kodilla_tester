@@ -1,9 +1,9 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Ford implements Car {
+public class Volvo implements Car {
     private int speed;
 
-    public Ford(int speed) {
+    public Volvo(int speed) {
         this.speed = speed;
     }
 
@@ -14,16 +14,11 @@ public class Ford implements Car {
 
     @Override
     public void increaseSpeed() {
-    speed = 40 + speed;
+        speed += 46;
     }
 
     @Override
     public void decreaseSpeed() {
-    speed = speed /2-25;
-    if(speed <=0){
-        speed = 0;
+        speed /= 2;
     }
-    }
-
-
 }

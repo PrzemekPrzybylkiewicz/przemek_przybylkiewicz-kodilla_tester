@@ -1,10 +1,10 @@
 package com.kodilla.collections.adv.immutable.homework;
 
-public class TaskDemolition extends Task {
+public class TaskDemolition {
     private int trueDuration;
 
     public TaskDemolition(String title, int duration) {
-        super(title, duration);
+
         trueDuration = duration;
     }
 
