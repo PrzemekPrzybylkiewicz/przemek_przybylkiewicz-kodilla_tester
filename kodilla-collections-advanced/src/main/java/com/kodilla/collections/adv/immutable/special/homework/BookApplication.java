@@ -1,12 +1,17 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-public class BookApplication {
+public class BookApplication  {
+
     public static void main(String[] args) {
+    BookManager bookManager = new BookManager();
+    bookManager.createBook("Mad Max","Max Maximialianowicz");
+    bookManager.createBook("Big Lebowski","the Dude");
+    bookManager.createBook("Pulp Fiction","Vincet Vega");
 
-       BookManager bookManager = new BookManager("v","b");
-      // bookManager.createBook("Book","Author");
+        System.out.println(bookManager.equals(bookManager));
 
-       System.out.println(bookManager.getAuthor()+""+bookManager.getTitle());
+
+
 
     }
 }
