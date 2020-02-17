@@ -16,10 +16,16 @@ public class CarsListApplication {
         cars.add(new Ford(55));
         cars.add(new Ford(45));
         cars.add(new Ford(100));
+        Ford ford = new Ford(50);
+        cars.add(ford);
+
+        cars.remove(2);
+        cars.remove(ford);
 
         for (Ford car : cars)
             System.out.println(car.getSpeed());
-
+        for (Ford car : cars)
+            CarUtils.describeCar(car);
     }
 }
 
