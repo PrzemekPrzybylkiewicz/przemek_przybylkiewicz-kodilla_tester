@@ -11,6 +11,7 @@ public class ShapesListApplication {
         shapes.add(new Square(10));
         shapes.add(new Square(5));
         shapes.add(new Square(1));
+        shapes.add(new Square(22));
 
         for (int i = 0; i <shapes.size() ; i++) {
             Square square = shapes.get(i);

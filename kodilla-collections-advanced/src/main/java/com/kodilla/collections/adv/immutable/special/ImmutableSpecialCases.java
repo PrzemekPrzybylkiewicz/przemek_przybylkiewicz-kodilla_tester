@@ -32,7 +32,10 @@ public class ImmutableSpecialCases {
         System.out.println(e.hashCode());
         System.out.println(f.hashCode());
         System.out.println(e==f);
-
+        String s = "text";
+        String s2= new String("text");
+        System.out.println("");
+        System.out.println(s.equals(s2));
 
         System.out.println(0.3 == 0.1 + 0.2);
         System.out.println(Math.abs(0.3 -( 0.1 + 0.2))<0.000001);
