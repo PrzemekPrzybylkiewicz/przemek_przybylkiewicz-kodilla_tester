@@ -6,16 +6,17 @@ import java.util.stream.Collectors;
 public class UsersManager {
     public static void main(String[] args) {
         //UsersRepository.getUserList()
-        List<String> usernames= UsersRepository.getUserList()
+        List<String> usernames = UsersRepository.getUserList()
                 .stream()
-                .filter(u ->u.getGroup().equals("Chemists") )
+                .filter(u -> u.getGroup().equals("Chemists"))
                 .map(UsersManager::getUserName)
                 .collect(Collectors.toList());
 
         System.out.println(usernames);
 
     }
-    public static String getUserName(User user){
+
+    public static String getUserName(User user) {
         return user.getUsername();
     }
 }
