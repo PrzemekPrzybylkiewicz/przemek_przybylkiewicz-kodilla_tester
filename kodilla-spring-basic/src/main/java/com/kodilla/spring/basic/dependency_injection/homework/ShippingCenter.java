@@ -5,12 +5,9 @@ public class ShippingCenter {
     private NotificationService notificationService = new NotificationService() {
         @Override
         public void success(String address) {
-
         }
-
         @Override
         public void fail(String address) {
-
         }
     };
 
