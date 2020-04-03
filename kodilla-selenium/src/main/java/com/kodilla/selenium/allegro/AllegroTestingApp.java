@@ -11,11 +11,11 @@ import java.util.concurrent.TimeUnit;
 
 public class AllegroTestingApp {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","d:/se/chrome/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://allegro.pl/");
 
-        WebElement cross = driver.findElement(By.xpath("//*[@class=\"_13q9y _8hkto _nu6wg _1sql3 _qdoeh _l7nkx _nyhhx\"]"));
+        WebElement cross = driver.findElement(By.cssSelector("button[data-role='close-and-accept-consent']"));
         cross.click();
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         WebElement filtr = driver.findElement(By.xpath("//*[@class=\"_d25db_2P-5I _1h7wt _k70df _7qjq4\"]"));
