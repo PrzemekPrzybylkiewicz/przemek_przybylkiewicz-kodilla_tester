@@ -11,21 +11,26 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/books")
-
 class BookController {
 
-    private final BookService bookService;
+    public final BookService bookService;
 
     public BookController(BookService bookService) {
         this.bookService = bookService;
     }
 
     @GetMapping
-    public List<BookDto> getBooks() {
+    public List<BookDto> getBooks(){
         return bookService.getBooks();
     }
     @PostMapping
     public void addBook(@RequestBody BookDto bookDto){
         bookService.addBook(bookDto);
     }
+    @DeleteMapping
+    public void removeBook(@RequestBody BookDto bookDto ){
+        bookService.removeBook(bookDto);
+    }
+
+
 }
