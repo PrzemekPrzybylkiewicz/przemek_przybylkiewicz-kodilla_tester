@@ -7,18 +7,18 @@ public class Calculator {
     int y;
 
 
-    public int addNum(int x,int y){
-       return  x+y;
+    public int addNum(int x, int y) {
+        return x + y;
     }
-    public int subtruckNum( int x,int y){
-        return x-y;
+
+    public int subtruckNum(int x, int y) {
+        return x - y;
     }
-    public double powNum(double x,double y){
-        double pow = pow(x ,y);
+
+    public double powNum(double x, double y) {
+        double pow = pow(x, y);
         return pow;
     }
-
-
 
 
 }

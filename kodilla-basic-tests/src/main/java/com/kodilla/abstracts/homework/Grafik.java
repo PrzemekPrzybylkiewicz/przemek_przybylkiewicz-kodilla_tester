@@ -8,8 +8,8 @@ public class Grafik extends Job {
 
     @Override
     public void toDo() {
-        System.out.println("Grafik komp ma za zadanie " +getResponsibilities());
-        System.out.println("Wynagrodzenie "+getSalary());
+        System.out.println("Grafik komp ma za zadanie " + getResponsibilities());
+        System.out.println("Wynagrodzenie " + getSalary());
 
     }
 }

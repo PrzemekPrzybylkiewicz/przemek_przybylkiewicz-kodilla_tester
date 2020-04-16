@@ -10,15 +10,16 @@ public class CarUtils {
         System.out.println("Model of a car: " + getModel(car));
         System.out.println("Car speed " + car.getSpeed());
     }
+
     private static String getModel(Car car) {
 
-    if(car instanceof Volvo)
-        return "Volvo";
-    else if(car instanceof Opel)
-        return "Opel";
-    else if(car instanceof Ford)
-        return "Ford";
-    else
-        return "Nie znam tego modelu";
+        if (car instanceof Volvo)
+            return "Volvo";
+        else if (car instanceof Opel)
+            return "Opel";
+        else if (car instanceof Ford)
+            return "Ford";
+        else
+            return "Nie znam tego modelu";
     }
 }

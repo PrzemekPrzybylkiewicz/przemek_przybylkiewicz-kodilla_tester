@@ -5,10 +5,11 @@ public class MacOs extends OperatingSystem {
         super(yearOs);
     }
 
-    public void turnOn(){
-        System.out.println("Computer whit MaxOs " );
+    public void turnOn() {
+        System.out.println("Computer whit MaxOs ");
     }
-    public void turnOff(){
+
+    public void turnOff() {
         System.out.println("Computer whit MaxOs");
     }
 }

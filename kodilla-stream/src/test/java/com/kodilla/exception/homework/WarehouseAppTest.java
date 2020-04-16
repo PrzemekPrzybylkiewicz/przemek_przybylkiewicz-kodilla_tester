@@ -2,11 +2,7 @@ package com.kodilla.exception.homework;
 
 import org.junit.Test;
 
-import java.awt.print.Book;
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 
 public class WarehouseAppTest {
 

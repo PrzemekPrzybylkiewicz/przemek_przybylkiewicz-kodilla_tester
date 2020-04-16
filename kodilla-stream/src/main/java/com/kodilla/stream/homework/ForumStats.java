@@ -24,7 +24,7 @@ public class ForumStats {
                 .average()
                 .getAsDouble();
 
-        System.out.println("40 > "+ avg);
+        System.out.println("40 > " + avg);
 
 //        UsersRepository.getUserList()
 //                .stream()

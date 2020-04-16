@@ -15,7 +15,7 @@ public class User { // tu znajdują sie dwa zadania z loop
             sum[i] = random.nextInt(30) + 1; // Random tabela od 1 do 30
             result = result + sum[i];           // wynik dodawnia
 
-              System.out.println(sum[i]);
+            System.out.println(sum[i]);
             //   System.out.println("min " + min );
             //   System.out.println("max " + max );
             if (min >= sum[i]) {  // sprawdzenie min

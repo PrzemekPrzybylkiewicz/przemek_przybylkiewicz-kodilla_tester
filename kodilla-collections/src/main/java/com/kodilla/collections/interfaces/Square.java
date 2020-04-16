@@ -3,19 +3,18 @@ package com.kodilla.collections.interfaces;
 public class Square implements Shape {
     private double width;
 
-    public Square(double width)
-    {
+    public Square(double width) {
         this.width = width;
     }
 
     @Override
     public double getArea() {
-        return width*width;
+        return width * width;
     }
 
     @Override
     public double getPerimeter() {
-        return 4*width;
+        return 4 * width;
     }
 
     @Override

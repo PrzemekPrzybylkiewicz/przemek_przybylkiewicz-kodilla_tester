@@ -6,6 +6,7 @@ public class ShippingCenter {
         @Override
         public void success(String address) {
         }
+
         @Override
         public void fail(String address) {
         }

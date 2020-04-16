@@ -2,11 +2,12 @@ package com.kodilla.exception;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class AirportRepositoryTest {
     @Test
-    public void testIsAirportInUse() throws AirportNotFoundException{
+    public void testIsAirportInUse() throws AirportNotFoundException {
         //given
         AirportRepository airportRepository = new AirportRepository();
         //when
@@ -14,8 +15,9 @@ public class AirportRepositoryTest {
         //then
         assertTrue(isWarsowInUse);
     }
+
     @Test(expected = AirportNotFoundException.class)
-    public void testIsAirportInUse_whitException()throws AirportNotFoundException{
+    public void testIsAirportInUse_whitException() throws AirportNotFoundException {
         //given
         AirportRepository airportRepository = new AirportRepository();
         //when

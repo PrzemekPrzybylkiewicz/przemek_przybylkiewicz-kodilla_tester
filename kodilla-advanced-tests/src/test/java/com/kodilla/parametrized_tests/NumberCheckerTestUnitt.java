@@ -9,13 +9,14 @@ public class NumberCheckerTestUnitt {
     NumberChecker numberChecker = new NumberChecker();
 
     @Test
-    public void shouldResultReturnTrueNumberEqualsThree(){
+    public void shouldResultReturnTrueNumberEqualsThree() {
         // Zmienna typu boolean o nazwie result przypisanan do classy numberChecker i metody spradzajacej czy liczba
         // jest podzielna przez 3. bez reszty. %
         boolean result = numberChecker.isDivisibleByThree(9);
         // oczekiwany pozytywny wynik
         assertTrue(result);
     }
+
     @Test
     public void shouldReturnFalseIfNumberIsNotDivisibleByThree() {
         boolean result = numberChecker.isDivisibleByThree(2);

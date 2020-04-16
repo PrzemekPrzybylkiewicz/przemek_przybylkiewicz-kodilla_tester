@@ -4,6 +4,6 @@ public class SimpleApplicationRunner {
     public static void main(String[] args) {
         MessageService messageService = new FacebookMessageService();
         SimpleApplication application = new SimpleApplication(messageService);
-        application.processMessage("TestMenager","reciver@mail.com");
+        application.processMessage("TestMenager", "reciver@mail.com");
     }
 }

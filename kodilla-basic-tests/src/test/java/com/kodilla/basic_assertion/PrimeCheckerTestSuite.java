@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PrimeCheckerTestSuite {
     private PrimeChecker checker = new PrimeChecker();
+
     @Test
     public void shouldReturnFalseWhenPassingNotPrimeNumber() {
         boolean result = checker.isPrime(14);

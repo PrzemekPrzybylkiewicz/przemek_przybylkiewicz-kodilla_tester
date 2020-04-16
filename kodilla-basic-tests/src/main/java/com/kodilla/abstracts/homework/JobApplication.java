@@ -7,10 +7,9 @@ public class JobApplication {
         Job programista = new Programista();
         Person person = new Person();
         person.process(programista);
-        person.firstName="Tomasz";
-        person.age=33;
-        System.out.println("Kandydat "+person.firstName + " lat " +person.age);
-
+        person.firstName = "Tomasz";
+        person.age = 33;
+        System.out.println("Kandydat " + person.firstName + " lat " + person.age);
 
 
     }

@@ -9,18 +9,19 @@ import java.util.Random;
 
 public class ShapeApplication {
     public static void main(String[] args) {
-        Shape[]shapes= new Shape[5];
+        Shape[] shapes = new Shape[5];
         for (int n = 0; n < shapes.length; n++)
-        shapes[n] = drawShape();
-        for ( Shape shape : shapes)
+            shapes[n] = drawShape();
+        for (Shape shape : shapes)
             ShapeUtils.displayShapeInfo(shape);
     }
+
     private static Shape drawShape() {
-            Random r = new Random();
-            int drawnShapeKind = r.nextInt(3);
-            double a = r.nextDouble() * 100 + 1;
-            double b = r.nextDouble() * 100 + 1;
-            double c = r.nextDouble() * 100 + 1;
+        Random r = new Random();
+        int drawnShapeKind = r.nextInt(3);
+        double a = r.nextDouble() * 100 + 1;
+        double b = r.nextDouble() * 100 + 1;
+        double c = r.nextDouble() * 100 + 1;
         if (drawnShapeKind == 0)
             return new Circle(a);
         else if (drawnShapeKind == 1)
@@ -29,5 +30,5 @@ public class ShapeApplication {
             return new Triangle(a, b, c);
 
     }
- 
+
 }

@@ -5,22 +5,23 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DictionaryTestSuite {
 
     @Test
-    public void testAddWord(){
+    public void testAddWord() {
         //given
-        Dictionary dictionary =new Dictionary();
+        Dictionary dictionary = new Dictionary();
         String polishWord = "stos";
-        EnglishWord englishWord = new EnglishWord(PartOfSpeech.NOUN,"stack");
+        EnglishWord englishWord = new EnglishWord(PartOfSpeech.NOUN, "stack");
         //when
-        dictionary.addWord(polishWord,englishWord);
+        dictionary.addWord(polishWord, englishWord);
         //then
-        assertEquals(1,dictionary.size());
+        assertEquals(1, dictionary.size());
     }
-//    @Test
+
+    //    @Test
 //    public void testFindEnglishWords(){
 //        Dictionary dictionary = new Dictionary();
 //        dictionary.addWord("stos", new EnglishWord(PartOfSpeech.NOUN,"stack"));
@@ -36,18 +37,18 @@ public class DictionaryTestSuite {
 //        assertEquals(expectedList,result);
 //    }
     @Test
-    public void testFindEnglishWords_withPartOfSpeech(){
+    public void testFindEnglishWords_withPartOfSpeech() {
         //given
         Dictionary dictionary = new Dictionary();
-        dictionary.addWord("stos", new EnglishWord(PartOfSpeech.NOUN , "stack"));
-        dictionary.addWord("brać", new EnglishWord(PartOfSpeech.NOUN , "brotherhood"));
-        dictionary.addWord("brać", new EnglishWord(PartOfSpeech.VERB , "takes"));
-        dictionary.addWord("grać", new EnglishWord(PartOfSpeech.VERB , "play"));
+        dictionary.addWord("stos", new EnglishWord(PartOfSpeech.NOUN, "stack"));
+        dictionary.addWord("brać", new EnglishWord(PartOfSpeech.NOUN, "brotherhood"));
+        dictionary.addWord("brać", new EnglishWord(PartOfSpeech.VERB, "takes"));
+        dictionary.addWord("grać", new EnglishWord(PartOfSpeech.VERB, "play"));
         //when
         List<EnglishWord> result = dictionary.findEnglishWords("brać", PartOfSpeech.NOUN);
         //then
         List<EnglishWord> expectedList = new ArrayList<>();
-        expectedList.add(new EnglishWord(PartOfSpeech.NOUN , "brotherhood"));
-        assertEquals(expectedList,result);
+        expectedList.add(new EnglishWord(PartOfSpeech.NOUN, "brotherhood"));
+        assertEquals(expectedList, result);
     }
 }

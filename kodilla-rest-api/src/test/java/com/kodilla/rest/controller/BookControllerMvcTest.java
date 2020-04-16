@@ -2,7 +2,6 @@ package com.kodilla.rest.controller;
 
 import com.kodilla.rest.domain.BookDto;
 import com.kodilla.rest.service.BookService;
-import jdk.nashorn.internal.runtime.regexp.joni.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,23 +21,24 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @WebMvcTest(BookController.class)
 public class BookControllerMvcTest {
-@Autowired
+    @Autowired
     private MockMvc mockMvc;
-@MockBean
+    @MockBean
     private BookService bookService;
-@Test
-    public void shouldFetchBook() throws Exception{
-    //given
-    List<BookDto> bookList = new ArrayList<>();
-    bookList.add(new BookDto("title 1", "author 1"));
-    bookList.add(new BookDto("title 2", "author 2"));
-    Mockito.when(bookService.getBooks()).thenReturn(bookList);
 
-    //when & then
-    mockMvc.perform(MockMvcRequestBuilders.get("/books").contentType(MediaType.APPLICATION_JSON))
-            .andExpect(MockMvcResultMatchers.status().is(200))
-            .andExpect(MockMvcResultMatchers.jsonPath("$", Matchers.hasSize(2)));
-}
+    @Test
+    public void shouldFetchBook() throws Exception {
+        //given
+        List<BookDto> bookList = new ArrayList<>();
+        bookList.add(new BookDto("title 1", "author 1"));
+        bookList.add(new BookDto("title 2", "author 2"));
+        Mockito.when(bookService.getBooks()).thenReturn(bookList);
+
+        //when & then
+        mockMvc.perform(MockMvcRequestBuilders.get("/books").contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().is(200))
+                .andExpect(MockMvcResultMatchers.jsonPath("$", Matchers.hasSize(2)));
+    }
 }
 
 

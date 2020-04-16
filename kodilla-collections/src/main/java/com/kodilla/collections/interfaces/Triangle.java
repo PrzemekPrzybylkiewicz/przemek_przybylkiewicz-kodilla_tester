@@ -1,7 +1,5 @@
 package com.kodilla.collections.interfaces;
 
-import com.kodilla.collections.interfaces.Shape;
-
 public class Triangle implements Shape {
     private double a;
     private double b;
@@ -15,12 +13,12 @@ public class Triangle implements Shape {
 
     @Override
     public double getArea() {
-        return a*b/2;
+        return a * b / 2;
     }
 
     @Override
     public double getPerimeter() {
-        return a+b+c;
+        return a + b + c;
     }
 
     @Override

@@ -15,6 +15,6 @@ public class School {
     @Override
     public String toString() {
         return
-                 " students=" + students ;
+                " students=" + students;
     }
 }

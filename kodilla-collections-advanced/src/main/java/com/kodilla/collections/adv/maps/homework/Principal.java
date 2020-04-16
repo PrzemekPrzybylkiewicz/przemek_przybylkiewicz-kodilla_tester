@@ -30,7 +30,7 @@ public class Principal {
     }
 
     public String getLastname() {
-        return name + lastname ;
+        return name + lastname;
     }
 
     @Override

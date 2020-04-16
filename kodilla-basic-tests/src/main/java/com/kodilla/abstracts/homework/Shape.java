@@ -6,29 +6,31 @@ public abstract class Shape {
     private int kolo_c;
 
 
-    public Shape ( int a ,int b){
-        this.pole_a= a;
-        this.obwod_b= b;
+    public Shape(int a, int b) {
+        this.pole_a = a;
+        this.obwod_b = b;
     }
-    public Shape (int c){
-        this.kolo_c= c;
+
+    public Shape(int c) {
+        this.kolo_c = c;
 
     }
 
-    public int getA(){
+    public int getA() {
         return pole_a;
     }
-    public int getB(){
+
+    public int getB() {
         return obwod_b;
     }
-    public int getC(){
+
+    public int getC() {
         return kolo_c;
     }
 
     public abstract void givePole();
 
     public abstract void giveObwod();
-
 
 
 }

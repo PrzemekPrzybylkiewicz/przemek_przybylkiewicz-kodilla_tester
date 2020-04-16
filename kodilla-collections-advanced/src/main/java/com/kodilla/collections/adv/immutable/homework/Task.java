@@ -1,22 +1,23 @@
 package com.kodilla.collections.adv.immutable.homework;
 
 public class Task {
-   protected String title;
-   protected int duration;
+    protected String title;
+    protected int duration;
 
     public Task(String title, int duration) {
         this.title = title;
         this.duration = duration;
     }
-    public void showMe(){
+
+    public void showMe() {
         System.out.println(title + duration);
     }
 
-    public  String getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public  int getDuration() {
+    public int getDuration() {
         return duration;
     }
 }

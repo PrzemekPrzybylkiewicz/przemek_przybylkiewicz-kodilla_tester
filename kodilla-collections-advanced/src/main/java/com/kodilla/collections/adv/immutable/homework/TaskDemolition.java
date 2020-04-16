@@ -8,9 +8,10 @@ public class TaskDemolition {
         trueDuration = duration;
     }
 
-    public void demolitionHammer(int newDuration){
+    public void demolitionHammer(int newDuration) {
         trueDuration = newDuration;
     }
+
     public int getDuration() {
         return trueDuration;
     }

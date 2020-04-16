@@ -24,6 +24,7 @@ public class GradesTestSuite {
         assertEquals(4, values[0]);
         assertEquals(2, values[1]);
     }
+
     @Test
     public void shouldCalculateAverage() {
         Grades grades = new Grades();
@@ -33,6 +34,7 @@ public class GradesTestSuite {
 
         assertEquals(3.66, grades.getAverage(), 0.01);
     }
+
     @Test
     public void shouldReturnAverageEqualsZeroIsArrayIsEmpty() {
         Grades grades = new Grades();

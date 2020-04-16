@@ -13,10 +13,10 @@ public class ShapesListApplication {
         shapes.add(new Square(1));
         shapes.add(new Square(22));
 
-        for (int i = 0; i <shapes.size() ; i++) {
+        for (int i = 0; i < shapes.size(); i++) {
             Square square = shapes.get(i);
-            if(square.getArea()>20)
-                System.out.println(square+  " , area :" + square.getArea());
+            if (square.getArea() > 20)
+                System.out.println(square + " , area :" + square.getArea());
         }
 
     }

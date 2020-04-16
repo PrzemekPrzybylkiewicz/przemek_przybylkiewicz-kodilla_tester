@@ -4,16 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AirportRepository {
-    private Map<String, Boolean> getListOfAirports(){
-        Map<String,Boolean> airports = new HashMap<>();
+    private Map<String, Boolean> getListOfAirports() {
+        Map<String, Boolean> airports = new HashMap<>();
         airports.put("Miami", true);
         airports.put("Malta", true);
         airports.put("LasPalmas", false);
         airports.put("Warsow", true);
         return airports;
     }
+
     public boolean isAirportInUse(String airport) throws AirportNotFoundException {
-        if(getListOfAirports().containsKey(airport))
+        if (getListOfAirports().containsKey(airport))
             return getListOfAirports().get(airport);
         throw new AirportNotFoundException();
     }

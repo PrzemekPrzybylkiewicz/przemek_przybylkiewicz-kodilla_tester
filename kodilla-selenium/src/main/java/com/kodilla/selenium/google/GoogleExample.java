@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleExample {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","d:/se/chrome/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "d:/se/chrome/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.ebay.com/ ");
         WebElement inputField = driver.findElement(By.name("_nkw"));

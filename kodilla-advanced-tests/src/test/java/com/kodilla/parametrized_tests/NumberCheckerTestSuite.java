@@ -1,7 +1,6 @@
 package com.kodilla.parametrized_tests;
 
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -25,7 +24,6 @@ public class NumberCheckerTestSuite {
         boolean result = numberChecker.isDivisibleByThree(number);
         assertFalse(result);
     }
-
 
 
 }

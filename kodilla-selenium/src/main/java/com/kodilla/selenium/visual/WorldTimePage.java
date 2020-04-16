@@ -11,7 +11,7 @@ public class WorldTimePage {
         this.webDriver = webDriver;
     }
 
-    public void open(){
+    public void open() {
         webDriver.get(pageUrl);
     }
 

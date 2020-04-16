@@ -8,17 +8,17 @@ import org.mockito.Mockito;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class BookControllerTest {
     @Test
-    public void shouldFetchBook(){
+    public void shouldFetchBook() {
         //given
         BookService bookServiceMock = Mockito.mock(BookService.class);
         BookController bookController = new BookController(bookServiceMock);
         List<BookDto> bookList = new ArrayList<>();
-        bookList.add(new BookDto("tytuł 1","autor 1"));
-        bookList.add(new BookDto("tytuł 2","autor 2"));
+        bookList.add(new BookDto("tytuł 1", "autor 1"));
+        bookList.add(new BookDto("tytuł 2", "autor 2"));
         Mockito.when(bookServiceMock.getBooks()).thenReturn(bookList);
         //when
 
@@ -26,5 +26,6 @@ class BookControllerTest {
         //then
         assertThat(result).hasSize(2);
     }
+
 
 }
