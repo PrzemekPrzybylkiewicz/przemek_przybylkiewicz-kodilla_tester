@@ -1,0 +1,14 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header/>
+<SOAP-ENV:Body>
+    <ns2:getCourseResponse xmlns:ns2="http://kodilla.com/courses/soap">
+        <ns2:course>
+            <ns2:reference>2</ns2:reference>
+            <ns2:name>Robinson Crusoe</ns2:name>
+            <ns2:author>Daniela Defoe</ns2:author>
+            <ns2:year>1991</ns2:year>
+            <ns2:type>SCI-FI</ns2:type>
+        </ns2:course>
+    </ns2:getCourseResponse>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

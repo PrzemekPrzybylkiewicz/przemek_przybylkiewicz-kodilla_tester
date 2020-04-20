@@ -5,7 +5,7 @@ import org.junit.Assert;
 
 public class IsDivisionCorrect implements En {
     private int number;
-    private int result;
+    private String result;
     private String answer;
 
     public IsDivisionCorrect() {
@@ -18,7 +18,7 @@ public class IsDivisionCorrect implements En {
         When("should divide", () -> {
             // Write code here that turns the phrase above into concrete actions
             DivisionChecker divisionChecker = new DivisionChecker();
-            // this.result = divisionChecker.checkNumber(this.number);
+             this.result = divisionChecker.checkNumber(this.number, answer);
         });
 
         Then("if divided by {int} say {string}", (Integer int1, String string) -> {
