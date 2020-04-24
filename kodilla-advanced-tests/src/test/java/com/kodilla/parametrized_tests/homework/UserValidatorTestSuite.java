@@ -9,7 +9,7 @@ class UserValidatorTestSuite {
     UserValidator userValidator = new UserValidator();
 
     @ParameterizedTest
-    @ValueSource(strings = {"t"})
+    @ValueSource(strings = {"test"})
     // tu mam jakis bład z kodu wykasowąłem \n
     public void isUserNameIsCorrect(String input) {
         assertTrue(userValidator.validateUsername(input));
